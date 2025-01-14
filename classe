@@ -1,0 +1,28 @@
+Classes et leurs rôles : 
+
+NAVIRE ( permet de représenter un navire sur la grille)
+  Il y a 4 attributs :
+    taille : Taille du navire (nombre de cases qu'il occupe).
+    nom : Nom du navire (par exemple, "Porte-avions").
+    positions : Liste des positions sur le plateau où le navire est placé.
+    touchees : Liste des positions où le navire a été touché.
+
+PLATEAU (représente les deux grilles de jeu)
+  Il y a 3 attributs :
+    taille : Taille du plateau (par défaut 10x10).
+    grille : Grille 2D représentant le plateau.
+    navires : Liste des navires placés sur le plateau.
+
+JOUEUR (représente les deux joueurs (ordinateur et personnant jouant au jeu))
+  Il y a 2 attributs :
+    nom : Nom du joueur ("Joueur" ou "Ordinateur").
+    plateau : classe Plateau associée au joueur.
+
+BATAILLENAVALEAPP (permet de gérer l'interface graphique)
+  Il y a 5 attributs :
+    root : Fenêtre principale de l'application Tkinter.
+    joueur et ordinateur : Instances des joueurs.
+    phase : Phase actuelle du jeu (placement des navires, jeu, terminé).
+    navire_actuel : Index du navire actuellement à placer.
+    orientation : Orientation actuelle des navires (horizontal ou vertical).
+
